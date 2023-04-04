@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Pacifico&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(150deg,#B3005E,#85CDFD);
+}
+h1 {
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(46, 41, 42);
+    font-size: 50px;
+    font-family: Alegreya Sans SC;
+    /* font-family: Alegreya San; */
+}
+.container {
+    background-color: rgb(189, 160, 174);
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    padding: 5px;
+    padding-left: 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+    /* border-bottom: 3px solid #8754ff; */
+    font-size: large;
+    background-color: #B3005E;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #8754ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #B3005E;
+    border-radius: 20px;
+    font-size: large;
+}
+.search-box > ::placeholder {
+    color: white;
+    font-size: large;
+    padding-left: 10px;
+}
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    /* color: rgb(77, 76, 76); */
+    color: black;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.result button {
+    background-color: transparent;
+    color: #B3005E;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    /* color: rgb(82, 81, 81); */
+    color: black;
+    margin: 5px 0 20px 20px;
+    font-size: 14px;
+}
+.word-meaning {
+    margin-left: 10px;
+    color: #000;
+}
+.word-example {
+    margin-left: 10px;
+    /* color: rgb(82, 81, 81); */
+    color: black;
+    font-style: italic;
+    border-left: 5px solid #B3005E;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
